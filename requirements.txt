@@ -1,0 +1,4 @@
+pandas
+sqlite3
+plotly.graph_objects
+collections
