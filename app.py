@@ -3,7 +3,7 @@ import zipfile
 import os
 
 # 定義資料庫壓縮檔的 GitHub URL
-GITHUB_URL = "https://github.com/twister0986/test_member/raw/main/Car_Database.rar"
+GITHUB_URL = "https://github.com/twister0986/test_member/raw/main/Car_Database.zip"
 
 # 定義下載和解壓的路徑
 zip_path = "Car_Database.rar"
