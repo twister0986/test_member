@@ -20,7 +20,7 @@ for index in range(2):
                     f.write(chunk)
     
         # 解壓縮檔案
-        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        with zipfile.ZipFile(zip_path[index], 'r') as zip_ref:
             zip_ref.extractall()
     
         # 移除壓縮檔
