@@ -24,7 +24,7 @@ for index in range(2):
             zip_ref.extractall()
     
         # 移除壓縮檔
-        os.remove(zip_path)
+        os.remove(zip_path[index])
     
 conn = sqlite3.connect('member_data_v3.db')
 cursor = conn.cursor()
