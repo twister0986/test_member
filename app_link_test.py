@@ -2,6 +2,7 @@ import requests
 import zipfile
 import os
 import sqlite3
+import streamlit as st
 
 # 定義資料庫壓縮檔的 GitHub URL
 GITHUB_URL = ["https://github.com/twister0986/test_member/raw/main/member_data_v3.zip",
