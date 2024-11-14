@@ -29,7 +29,7 @@ if not os.path.exists(db_path):
 conn = sqlite3.connect('member_carrier_v3.db')
 cursor = conn.cursor()
 
-cursor.execute('SELECT * FROM `UU-1001`;')
+cursor.execute('SELECT * FROM `merge_area_store`;')
 
 st.write(len(cursor.fetchall()))
 tables=cursor.fetchall()
