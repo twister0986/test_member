@@ -4,6 +4,11 @@ import os
 import streamlit as st
 import sqlite3
 
+import zipfile
+import os
+import streamlit as st
+import sqlite3
+
 # 定義檔案的基本路徑與名稱
 db_path = 'member_carrier_v3.db'
 zip_path = 'member_carrier_v3.zip'
@@ -15,7 +20,7 @@ GITHUB_URLS = [
     "https://github.com/twister0986/test_member/raw/main/member_carrier_v3.z02", 
     "https://github.com/twister0986/test_member/raw/main/member_carrier_v3.z03"
 ]
-zip_parts = ["member_carrier_v3.zip","member_carrier_v3.z01","member_carrier_v3.z02","member_carrier_v3.03"]
+zip_parts = [f"member_carrier_v3.z{i:02}" for i in range(len(GITHUB_URLS))]
 
 # 確認資料庫是否已存在
 if not os.path.exists(db_path):
